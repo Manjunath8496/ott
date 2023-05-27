@@ -30,7 +30,7 @@ const Home = () => {
     return ( 
         <div className="home">
             {pending==true ? <h1>Loading...</h1> : <h1>{error}</h1>}
-
+            <h1>manju</h1>
             {movies && <MoviesList movies={movies} title="all movies"/>}
             {movies && <MoviesList movies={movies.filter((m)=>{return m.genre.includes("action")})} title="action movies" />}
             {movies && <MoviesList movies={movies.filter((r)=>{return r.rating>=8.5})} title="top rated movies"/>}
